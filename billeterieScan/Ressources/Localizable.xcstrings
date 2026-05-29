@@ -1,7 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%lld commande(s)" : {
+    "%@  %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@  %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
 
     },
     "••••••••" : {
@@ -65,6 +75,9 @@
         }
       }
     },
+    "Erreur" : {
+
+    },
     "Hello, world!" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -103,11 +116,24 @@
     "logout" : {
 
     },
-    "MainTabView view" : {
+    "OK" : {
 
     },
     "orders" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orders"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Commandes"
+          }
+        }
+      }
     },
     "Password" : {
       "extractionState" : "manual",
@@ -122,6 +148,43 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mot de passe"
+          }
+        }
+      }
+    },
+    "Scan view" : {
+
+    },
+    "tabs.orders" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orders"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commandes"
+          }
+        }
+      }
+    },
+    "tabs.scan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanner"
           }
         }
       }

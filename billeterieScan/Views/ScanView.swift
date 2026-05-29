@@ -1,14 +1,12 @@
 //
-//  ScannerView.swift
+//  ScanView.swift
 //  billeterieScan
 //
 //  Created by Alice Zheng on 27/05/2026.
 //
-
-
 import SwiftUI
 
-struct ScannerView: View {
+struct ScanView: View {
     @AppStorage("authToken") private var authToken: String?
 
     var body: some View {
@@ -29,5 +27,5 @@ struct ScannerView: View {
 }
 
 #Preview {
-    ScannerView()
+    ScanView()
 }

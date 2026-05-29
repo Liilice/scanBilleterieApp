@@ -38,28 +38,16 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				Views/ScannerView.swift,
 			);
 			target = 0A45D8172FBBA5490009950B /* billeterieScan */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		0A45D92A2FC73D270009950B /* Exceptions for "billeterieScan" folder in "Copy Bundle Resources" phase from "billeterieScan" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 0A45D8162FBBA5490009950B /* Resources */;
-			membershipExceptions = (
-				Views/ScannerView.swift,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0A45D81A2FBBA5490009950B /* billeterieScan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				0A45D8572FBF5F160009950B /* Exceptions for "billeterieScan" folder in "billeterieScan" target */,
-				0A45D92A2FC73D270009950B /* Exceptions for "billeterieScan" folder in "Copy Bundle Resources" phase from "billeterieScan" target */,
 			);
 			path = billeterieScan;
 			sourceTree = "<group>";

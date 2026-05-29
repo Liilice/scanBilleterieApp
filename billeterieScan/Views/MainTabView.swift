@@ -9,25 +9,31 @@ import SwiftUI
 struct MainTabView: View {
     @AppStorage("authToken") private var authToken: String?
 
+    enum Tabs {
+        case orders
+        case scan
+    }
+    @State var tabSelection: Tabs = .orders
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 24) {
-                Text("MainTabView view")
-                    .font(.largeTitle)
-                    .bold()
-
-                Button("logout") {
-                    authToken = nil
-                    UserDefaults.standard.removeObject(forKey: "authToken")
+        TabView(selection: $tabSelection, content: {
+            OrdersView()
+                .tabItem {
+                    Label("tabs.orders", systemImage: "list.clipboard")
                 }
-            }
-            .padding()
-        }
+                .toolbarBackground(Color(white: 0.15), for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarColorScheme(.dark, for: .tabBar)
+            ScanView()
+                .tabItem {
+                    Label("tabs.scan", systemImage: "qrcode.viewfinder")
+                }
+                .toolbarBackground(Color(white: 0.15), for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarColorScheme(.dark, for: .tabBar)
+        })
     }
 }
 
 #Preview {
     MainTabView()
 }
-
-
