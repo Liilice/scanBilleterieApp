@@ -58,6 +58,23 @@
         }
       }
     },
+    "Camera" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open camera"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir la caméra"
+          }
+        }
+      }
+    },
     "ConnectBtn" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -113,9 +130,6 @@
         }
       }
     },
-    "logout" : {
-
-    },
     "OK" : {
 
     },
@@ -135,6 +149,9 @@
         }
       }
     },
+    "Ouvrir le lien" : {
+
+    },
     "Password" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -152,7 +169,10 @@
         }
       }
     },
-    "Scan view" : {
+    "QR code scanné" : {
+
+    },
+    "Scanner à nouveau" : {
 
     },
     "tabs.orders" : {

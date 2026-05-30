@@ -90,6 +90,7 @@ struct LoginView: View {
                     }
                     .textContentType(.password)
                     .autocorrectionDisabled()
+                    .textInputAutocapitalization(.never)
                     .foregroundStyle(Color(R.color.tertiary))
 
                     Button {

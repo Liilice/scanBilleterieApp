@@ -25,7 +25,7 @@ private func decodeErrorMessage(from data: Data) -> String? {
 
 final class APIClient {
     static let shared = APIClient()
-    private let baseURL = URL(string: "http://localhost:3000/api")!
+    private let baseURL = URL(string: "https://chorale-de-bons-choeurs-f7hr.vercel.app/api/")!
     private let session = URLSession.shared
 
     private var authToken: String? {
@@ -34,6 +34,8 @@ final class APIClient {
 
     func login(password: String) async throws -> String {
         let url = baseURL.appendingPathComponent("admin/connect")
+        print("url \(url)")
+        print("password \(password)")
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

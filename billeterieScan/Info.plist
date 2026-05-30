@@ -2,15 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>L'accès à la caméra est nécessaire pour scanner les QR codes des billets.</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UILaunchScreen</key>
 		<string></string>
-	</dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsLocalNetworking</key>
-		<true/>
 	</dict>
 </dict>
 </plist>

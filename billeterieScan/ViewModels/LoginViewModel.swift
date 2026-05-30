@@ -5,6 +5,7 @@
 
 import Foundation
 
+@MainActor
 @Observable
 final class LoginViewModel {
     var password: String = ""

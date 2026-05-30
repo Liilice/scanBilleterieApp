@@ -20,6 +20,7 @@ struct MainTabView: View {
                 .tabItem {
                     Label("tabs.orders", systemImage: "list.clipboard")
                 }
+                .tag(Tabs.orders)
                 .toolbarBackground(Color(white: 0.15), for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarColorScheme(.dark, for: .tabBar)
@@ -27,6 +28,7 @@ struct MainTabView: View {
                 .tabItem {
                     Label("tabs.scan", systemImage: "qrcode.viewfinder")
                 }
+                .tag(Tabs.scan)
                 .toolbarBackground(Color(white: 0.15), for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarColorScheme(.dark, for: .tabBar)

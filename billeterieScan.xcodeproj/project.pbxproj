@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A45D8512FBF431D0009950B /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 0A45D8502FBF431D0009950B /* RswiftLibrary */; };
+		0A45D9DC2FC9D1670009950B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 0A45D9DB2FC9D1670009950B /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A45D9DC2FC9D1670009950B /* CodeScanner in Frameworks */,
 				0A45D8512FBF431D0009950B /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +135,7 @@
 			name = billeterieScan;
 			packageProductDependencies = (
 				0A45D8502FBF431D0009950B /* RswiftLibrary */,
+				0A45D9DB2FC9D1670009950B /* CodeScanner */,
 			);
 			productName = billeterieScan;
 			productReference = 0A45D8182FBBA5490009950B /* billeterieScan.app */;
@@ -219,6 +222,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				0A45D84F2FBF431C0009950B /* XCRemoteSwiftPackageReference "R" */,
+				0A45D9D52FC9CFDE0009950B /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A45D8192FBBA5490009950B /* Products */;
@@ -449,10 +453,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"billeterieScan/Preview Content\"";
+				DEVELOPMENT_TEAM = TYS4PPW2JK;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = billeterieScan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan arcade";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -482,10 +488,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"billeterieScan/Preview Content\"";
+				DEVELOPMENT_TEAM = TYS4PPW2JK;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = billeterieScan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan arcade";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -625,6 +633,14 @@
 				minimumVersion = 7.8.0;
 			};
 		};
+		0A45D9D52FC9CFDE0009950B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +653,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0A45D84F2FBF431C0009950B /* XCRemoteSwiftPackageReference "R" */;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		0A45D9DB2FC9D1670009950B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A45D9D52FC9CFDE0009950B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
